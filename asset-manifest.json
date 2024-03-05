@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ota-ble-web/static/css/main.7e6de23a.chunk.css",
+    "main.js": "/ota-ble-web/static/js/main.7517375e.chunk.js",
+    "main.js.map": "/ota-ble-web/static/js/main.7517375e.chunk.js.map",
+    "runtime-main.js": "/ota-ble-web/static/js/runtime-main.22f7c7f0.js",
+    "runtime-main.js.map": "/ota-ble-web/static/js/runtime-main.22f7c7f0.js.map",
+    "static/js/2.ddd56c7c.chunk.js": "/ota-ble-web/static/js/2.ddd56c7c.chunk.js",
+    "static/js/2.ddd56c7c.chunk.js.map": "/ota-ble-web/static/js/2.ddd56c7c.chunk.js.map",
+    "index.html": "/ota-ble-web/index.html",
+    "precache-manifest.90e1191a8f4532d538de32ccf542f4cc.js": "/ota-ble-web/precache-manifest.90e1191a8f4532d538de32ccf542f4cc.js",
+    "service-worker.js": "/ota-ble-web/service-worker.js",
+    "static/css/main.7e6de23a.chunk.css.map": "/ota-ble-web/static/css/main.7e6de23a.chunk.css.map",
+    "static/js/2.ddd56c7c.chunk.js.LICENSE.txt": "/ota-ble-web/static/js/2.ddd56c7c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22f7c7f0.js",
+    "static/js/2.ddd56c7c.chunk.js",
+    "static/css/main.7e6de23a.chunk.css",
+    "static/js/main.7517375e.chunk.js"
+  ]
+}
