@@ -100,10 +100,11 @@ function CheckVersion(){
     document.getElementById('sw_version').innerHTML = "Software: " + softwareVersion;
   })
   //Grab our version numbers from Github
-  .then(_ => fetch('https://raw.githubusercontent.com/sparkfun/ESP32_OTA_BLE_React_WebApp_Demo/master/GithubRepo/version.json'))
+  .then(_ => fetch('https://raw.githubusercontent.com/iotktv/digital-scale/master/build/version.json'))
   .then(function (response) {
     // The API call was successful!
     return response.json();
+    
   })
   .then(function (data) {
     // JSON should be formatted so that 0'th entry is the newest version
@@ -148,7 +149,7 @@ function PromptUserForUpdate(){
           left: [{
               text: 'Yes',
               action: function () {
-                fetch('https://raw.githubusercontent.com/sparkfun/ESP32_OTA_BLE_React_WebApp_Demo/' + latestCompatibleSoftware + '/GithubRepo/' + currentHardwareVersion + '.bin')
+                fetch('https://raw.githubusercontent.com/iotktv/digital-scale/' + latestCompatibleSoftware + '/build/koltivabaru.ino.bin')
                 .then(function (response) {
                   return response.arrayBuffer();
                 })
@@ -216,6 +217,7 @@ function SendBufferedData() {
     currentPosition += amountToWrite;
     remaining -= amountToWrite;
     console.log("remaining: " + remaining);
+    console.log("OK sampai sini")
     esp32Service.getCharacteristic(fileCharacteristicUuid)
       .then(characteristic => RecursiveSend(characteristic, dataToSend))
       .then(_ => {
